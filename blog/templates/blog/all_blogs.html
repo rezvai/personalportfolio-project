@@ -1,0 +1,12 @@
+<h1>hello</h1>
+<a href="{% url 'home' %}">Link</a>
+
+{{ project }}
+
+{% for project in projects %}
+
+<h1>{{ project.title }}</h1>
+<h2>{{ project.date }}</h2>
+{{ project.description }}
+
+{% endfor %}
